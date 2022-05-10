@@ -6,6 +6,7 @@ if choice == "1":
     F = FCFS.FCFS()
     F.manage()
     F.cal_average_roundTime()
+    F.cal_average_roundTimeWithWeight()
 else:
     H = HRRF.HRRF()
     H.manage()

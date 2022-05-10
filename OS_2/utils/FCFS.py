@@ -23,6 +23,14 @@ class FCFS(object):
         sum_roundTime = 0
         for i in self.processAll:
             sum_roundTime += i.roundTime
+        print("平均周转时间为：" + str(sum_roundTime / len(self.processAll)))
+        return sum_roundTime / len(self.processAll)
+
+    def cal_average_roundTimeWithWeight(self):
+        sum_roundTime = 0
+        for i in self.processAll:
+            sum_roundTime += float(i.roundTime) / float(i.spend)
+        print("平均周转时间为：" + str(sum_roundTime / len(self.processAll)))
         return sum_roundTime / len(self.processAll)
 
 
