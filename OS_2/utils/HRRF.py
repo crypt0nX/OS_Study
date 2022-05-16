@@ -1,4 +1,4 @@
-import utils.PCB as PCB
+import OS_2.utils.PCB as PCB
 
 
 def cal_response_rate(processWaitTime, processSpendTime):
